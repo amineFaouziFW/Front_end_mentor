@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f6f7fb;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  width: 550px;
+  height: 480px;
+  background-color: #fff;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 12px 12px 100px 12px;
+  padding: 30px 25px;
+}
+
+.container .data-input {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 90%;
+  height: 20%;
+  margin-left: -35px;
+}
+
+.container .data-input .year-of-birth,
+.container .data-input .month-of-birth,
+.container .data-input .day-of-birth {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  height: 50px;
+  position: absolute;
+}
+
+.container .data-input .year-of-birth {
+  left: 0;
+}
+
+.container .data-input .month-of-birth {
+  left: 25%;
+}
+
+.container .data-input .day-of-birth {
+  left: 50%;
+}
+
+.container .data-input .year-of-birth span,
+.container .data-input .month-of-birth span,
+.container .data-input .day-of-birth span {
+  font-size: 10px;
+  width: 50px;
+  font-weight: 700;
+  margin-left: 30px;
+  opacity: 0.8;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.container .data-input .year-of-birth input,
+.container .data-input .month-of-birth input,
+.container .data-input .day-of-birth input {
+  width: 100%;
+  height: 100%;
+  padding: 10px 15px;
+  font-size: 23px;
+  font-weight: 800;
+  border-radius: 5px;
+  margin-left: 30px;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid rgba(85, 85, 85, 0.3);
+}
+
+.container .data-input .year-of-birth input:hover,
+.container .data-input .month-of-birth input:hover,
+.container .data-input .day-of-birth input:hover {
+  border: 1px solid rgba(133, 76, 253, 1);
+}
+
+.container .data-input .year-of-birth ::placeholder,
+.container .data-input .month-of-birth ::placeholder,
+.container .data-input .day-of-birth ::placeholder {
+  color: #555;
+  opacity: 0.6;
+  padding-top: 30px;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.container .mid-section {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.container .mid-section .inner-line {
+  display: block;
+  width: 440px;
+  height: 1px;
+  background-color: rgba(85, 85, 85, 0.3);
+  margin: 20px 0;
+}
+
+.container .mid-section .arrow-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: -30%;
+  background-color: rgba(133, 76, 253, 1);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.container .mid-section .arrow-svg:hover {
+  background-color: #000;
+  cursor: pointer;
+}
+
+.container .mid-section .arrow-svg svg {
+  width: 30px;
+  height: 30px;
+}
+
+.container .data-output {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 230px;
+  margin-left: 30px;
+  font-size: 32px;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.data-output h1 span {
+  color: rgba(133, 76, 253, 1);
+}
+
+.container .data-input .year-of-birth small,
+.container .data-input .month-of-birth small,
+.container .data-input .day-of-birth small {
+  color: hsl(0, 100%, 67%);
+  width: 100px;
+  height: 40px;
+  margin-left: 32px;
+  font-size: 8.5px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 375px) {
+  .container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    height: 450px;
+    background-color: #fff;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 12px 12px 100px 12px;
+    padding: 30px 25px;
+  }
+  .container .data-input {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 20%;
+    margin-left: 10px;
+  }
+
+  .container .data-input .year-of-birth,
+  .container .data-input .month-of-birth,
+  .container .data-input .day-of-birth {
+    display: flex;
+    flex-direction: column;
+    width: 70px;
+    height: 85px;
+    position: absolute;
+  }
+
+  .container .data-input .year-of-birth {
+    left: 0;
+  }
+
+  .container .data-input .month-of-birth {
+    left: 25%;
+  }
+
+  .container .data-input .day-of-birth {
+    left: 50%;
+  }
+  .container .data-input .year-of-birth span,
+  .container .data-input .month-of-birth span,
+  .container .data-input .day-of-birth span {
+    font-size: 9px;
+    width: 50px;
+    font-weight: 700;
+    margin-left: 30px;
+    opacity: 0.8;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .container .data-input .year-of-birth input,
+  .container .data-input .month-of-birth input,
+  .container .data-input .day-of-birth input {
+    width: 100%;
+    height: 100%;
+    padding: 5px 8px;
+    font-size: 15px;
+    font-weight: 800;
+    border-radius: 5px;
+    margin-left: 30px;
+    outline: none;
+    border: 1px solid rgba(85, 85, 85, 0.3);
+  }
+
+  .container .data-input .year-of-birth input:active,
+  .container .data-input .month-of-birth input:active,
+  .container .data-input .day-of-birth input:active {
+    border: 1px solid rgba(133, 76, 253, 1);
+  }
+
+  .container .data-input .year-of-birth ::placeholder,
+  .container .data-input .month-of-birth ::placeholder,
+  .container .data-input .day-of-birth ::placeholder {
+    color: #555;
+    opacity: 0.6;
+    padding-top: 30px;
+    font-size: 16px;
+    font-weight: 800;
+  }
+
+  .container .mid-section {
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .container .mid-section .inner-line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(85, 85, 85, 0.3);
+    margin: 20px 0;
+  }
+
+  .container .mid-section .arrow-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 30%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(133, 76, 253, 1);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .container .mid-section .arrow-svg:active {
+    background-color: #000;
+  }
+
+  .container .mid-section .arrow-svg svg {
+    width: 26px;
+    height: 26px;
+    font-weight: 600;
+  }
+
+  .container .data-output {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+    margin-left: 30px;
+    margin-top: 32px;
+    font-size: 20px;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+  .data-output h1 {
+    font-size: 45px;
+  }
+
+  .data-output h1 span {
+    font-size: 45px;
+    color: rgba(133, 76, 253, 1);
+  }
+
+  .container .data-input .year-of-birth small,
+  .container .data-input .month-of-birth small,
+  .container .data-input .day-of-birth small {
+    color: hsl(0, 100%, 67%);
+    width: 80px;
+    text-align: center;
+    height: 30px;
+    margin-left: 27px;
+    font-size: 8.5px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

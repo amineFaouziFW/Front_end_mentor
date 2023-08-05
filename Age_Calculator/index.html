@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Age Caculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="data-input">
+        <div class="year-of-birth">
+          <span>Day</span>
+          <input type="text" placeholder="DD" id="input-day" />
+          <small id="error-day"></small>
+        </div>
+        <div class="month-of-birth">
+          <span>Month</span>
+          <input type="text" placeholder="MM" id="input-month" />
+          <small id="error-month"></small>
+        </div>
+        <div class="day-of-birth">
+          <span>Year</span>
+          <input type="text" placeholder="YYYY" id="input-year" />
+          <small id="error-year"></small>
+        </div>
+      </div>
+      <div class="mid-section">
+        <div class="inner-line"></div>
+        <button id="submit" class="arrow-svg">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="46"
+            height="44"
+            viewBox="0 0 46 44"
+          >
+            <g fill="none" stroke="#FFF" stroke-width="2">
+              <path
+                d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+              />
+            </g>
+          </svg>
+        </button>
+      </div>
+      <div class="data-output">
+        <h1><span id="output-year">- -</span>&nbsp;years</h1>
+        <h1><span id="output-month">- -</span>&nbsp;months</h1>
+        <h1><span id="output-day">- -</span>&nbsp;days</h1>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
